@@ -1,0 +1,43 @@
+.DSA_OuterDiv {
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(31, 95, 150); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.DSA_InnerDiv {
+    height: 50px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+button {
+    height: 90%;
+    width: 100%;
+    background-color: #282828;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.selectedButton {
+    display: flex;
+    justify-content: center;
+}
+
+.selectedButton>h1 {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    button {
+        font-size: 70%;
+    }
+}

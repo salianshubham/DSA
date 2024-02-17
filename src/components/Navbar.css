@@ -1,0 +1,106 @@
+.outerDiv {
+    height: 10vh;
+    width: 100vw;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerDiv {
+    display: flex;
+    height: 8vh;
+    width: 85vw;
+    justify-content: space-between;
+}
+
+.shubhamDiv {
+    height: 5vh;
+    width: 10vw;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    margin: 2.5vh 0 0 0;
+    color: #FFFF;
+    align-items: center;
+}
+
+.navBarContentDiv {
+    height: 5vh;
+    width: 20vw;
+    font-size: 100%;
+    margin: 2.5vh 0 0 0;
+    color: #FFFF;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.shubhamText {
+    margin: 0;
+}
+
+.menu {
+
+    display: none;
+    height: 50px;
+    z-index: 1;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: #333;
+    z-index: 1;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .navBarContentDiv {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        /* left: 59%; */
+        width: 90%;
+        height: 200px;
+        background-color: #333;
+        z-index: 1;
+        list-style: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .nav-links.mobile-menu-open {
+        display: flex;
+        
+    }
+}
