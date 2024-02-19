@@ -14,8 +14,6 @@ app.get('/', (req, res) => {
 app.post('/DSA/array', (req, res) => {
     const number = req.body.number
     const arr = req.body.arr;
-    console.log("AA", number)
-    console.log("arr", arr)
     res.json({
         status: 200,
         message: "Success",
